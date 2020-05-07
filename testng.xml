@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.myStore.qa.extentReportListener.ExtentReportListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/Jignesh/intellejProjects2/seleniumprojects/YourLogoAutomation">
+        <classes>
+
+            <class name="com.myStore.qa.test.SignInTest">
+                <methods>
+                    <include name="validateSignInHeaderTest"/>
+                </methods>
+            </class>
+
+            <class name="com.myStore.qa.test.PersonalInfoTest">
+                <methods>
+                    <include name="validatePersonalInfoPageTest"/>
+                    <include name="fillPersonalDetailsTest"/>
+                </methods>
+            </class>
+
+            <class name="com.myStore.qa.test.HomePageTest">
+                <methods>
+                    <include name="validateHomePageTest"/>
+                    <include name="logInWithNewCredentialTest"/>
+                    <include name="orderFlowTest"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
